@@ -33,7 +33,7 @@ class IntroSlider extends StatelessWidget {
                   'assets/images/1.jpeg',
                   fit: BoxFit.fill,
                 ),
-                SizedBox(height: _height * 0.02),
+                SizedBox(height: _height * 0.15),
                 Padding(
                   padding: EdgeInsets.only(
                       left: _width * 0.05, right: _width * 0.05),
@@ -64,7 +64,7 @@ class IntroSlider extends StatelessWidget {
                   'assets/images/two.jpeg',
                   fit: BoxFit.fill,
                 ),
-                SizedBox(height: _height * 0.02),
+                SizedBox(height: _height * 0.15),
                 Padding(
                   padding: EdgeInsets.only(
                       left: _width * 0.05, right: _width * 0.05),
@@ -95,7 +95,7 @@ class IntroSlider extends StatelessWidget {
                   'assets/images/three.jpeg',
                   fit: BoxFit.fill,
                 ),
-                SizedBox(height: _height * 0.02),
+                SizedBox(height: _height * 0.15),
                 Padding(
                   padding: EdgeInsets.only(
                       left: _width * 0.05, right: _width * 0.05),
@@ -124,7 +124,7 @@ class IntroSlider extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: Container(
-            color: Colors.black,
+            color: Color.fromARGB(255, 36, 57, 146),
             width: _width * 0.8,
             child: OutlinedButton(
               onPressed: () {
