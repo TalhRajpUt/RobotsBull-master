@@ -160,8 +160,8 @@ class _IntroSliderState extends State<IntroSlider> {
               },
               child: Text('Get Started',
                   style: GoogleFonts.roboto(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
                       color: Colors.white)),
             ),
           ),
