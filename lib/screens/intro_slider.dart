@@ -139,35 +139,28 @@ class _IntroSliderState extends State<IntroSlider> {
                 ],
               )
             ],
-          ),
-          Positioned(
-              top: newHeight * 0.425,
-              left: _width * 0.4,
-              child: buildIndicator()),
-          Positioned(
-            bottom: newHeight * 0.1,
-            left: _width * 0.1,
-            right: _width * 0.1,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                    fixedSize: Size(MediaQuery.of(context).size.width * 0.8,
-                        MediaQuery.of(context).size.height * 0.06),
-                    backgroundColor: Colors.blue),
-                onPressed: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const WebviewScreen()),
-                  );
-                },
-                child: Text('Get Started',
-                    style: GoogleFonts.roboto(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white)),
-              ),
+          ),SizedBox(height: newHeight*0.7),
+          buildIndicator(),
+          SizedBox(height: newHeight*1),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: OutlinedButton(
+              style: OutlinedButton.styleFrom(
+                  fixedSize: Size(MediaQuery.of(context).size.width * 0.8,
+                      MediaQuery.of(context).size.height * 0.06),
+                  backgroundColor: Colors.blue),
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const WebviewScreen()),
+                );
+              },
+              child: Text('Get Started',
+                  style: GoogleFonts.roboto(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white)),
             ),
           ),
         ],
