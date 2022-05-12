@@ -19,6 +19,8 @@ class _IntroSliderState extends State<IntroSlider> {
   Widget build(BuildContext context) {
     double _height = MediaQuery.of(context).size.height;
     double _width = MediaQuery.of(context).size.width;
+    var _padding = MediaQuery.of(context).padding;
+    double newHeight = _height - _padding.top;
     return Material(
       child: Stack(
         children: [
@@ -139,11 +141,11 @@ class _IntroSliderState extends State<IntroSlider> {
             ],
           ),
           Positioned(
-              top: _height * 0.425,
+              top: newHeight * 0.425,
               left: _width * 0.4,
               child: buildIndicator()),
           Positioned(
-            bottom: _height * 0.1,
+            bottom: newHeight * 0.1,
             left: _width * 0.1,
             right: _width * 0.1,
             child: ClipRRect(
