@@ -23,93 +23,92 @@ class _IntroSliderState extends State<IntroSlider> {
       top: false,
       child: Column(
         children: [
-          SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: Stack(
-              children: [
-                CarouselSlider(
-                  options: CarouselOptions(
-                    onPageChanged: ((index, reason) {
-                      setState(() {
-                        _current = index;
-                      });
-                    }),
-                    enableInfiniteScroll: false,
-                    viewportFraction: 1,
-                    height: _height * 0.9,
-                    autoPlay: false,
-                    autoPlayCurve: Curves.fastOutSlowIn,
-                    enlargeCenterPage: false,
-                    padEnds: true,
-                  ),
-                  items: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Image.asset(
-                          'assets/images/1.jpeg',
-                          fit: BoxFit.fill,
-                        ),
-                        SizedBox(height: _height * 0.06),
-                        Padding(
-                          padding: EdgeInsets.only(
-                              left: _width * 0.07, right: _width * 0.07),
-                          child: Text('Welcome to RobotBulls',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 26,
-                                  fontWeight: FontWeight.bold)),
-                        ),
-                        SizedBox(height: _height * 0.03),
-                        Padding(
-                          padding: EdgeInsets.only(
-                              left: _width * 0.07, right: _width * 0.07),
-                          child: Center(
-                            child: Text(
-                              "We develop trading robots that research for you on the basis of past market experiences and of traders' current emotions.",
-                              softWrap: true,
-                              style: TextStyle(
-                                  color: Color.fromARGB(221, 1, 1, 1),
-                                  fontSize: 21,
-                                  fontWeight: FontWeight.w200),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Image.asset(
-                          'assets/images/two.jpeg',
-                          fit: BoxFit.fill,
-                        ),
-                        SizedBox(height: _height * 0.06),
-                        Padding(
-                          padding: EdgeInsets.only(
-                              left: _width * 0.07, right: _width * 0.07),
-                          child: Text('Invest with ease',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 26,
-                                  fontWeight: FontWeight.bold)),
-                        ),
-                        SizedBox(height: _height * 0.03),
-                        Padding(
-                          padding: EdgeInsets.only(
-                              left: _width * 0.05, right: _width * 0.05),
+          Stack(
+            children: [
+              CarouselSlider(
+                options: CarouselOptions(
+                  onPageChanged: ((index, reason) {
+                    setState(() {
+                      _current = index;
+                    });
+                  }),
+                  enableInfiniteScroll: false,
+                  viewportFraction: 1,
+                  height: _height * 0.9,
+                  autoPlay: false,
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  enlargeCenterPage: false,
+                  padEnds: true,
+                ),
+                items: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/1.jpeg',
+                        fit: BoxFit.fill,
+                      ),
+                      SizedBox(height: _height * 0.06),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            left: _width * 0.07, right: _width * 0.07),
+                        child: Text('Welcome to RobotBulls',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 26,
+                                fontWeight: FontWeight.bold)),
+                      ),
+                      SizedBox(height: _height * 0.03),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            left: _width * 0.07, right: _width * 0.07),
+                        child: Center(
                           child: Text(
-                            "Choose your trading bot and invest your favourite asset.",
+                            "We develop trading robots that research for you on the basis of past market experiences and of traders' current emotions.",
                             softWrap: true,
                             style: TextStyle(
                                 color: Color.fromARGB(221, 1, 1, 1),
                                 fontSize: 21,
                                 fontWeight: FontWeight.w200),
                           ),
-                        )
-                      ],
-                    ),
-                    Column(
+                        ),
+                      )
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'assets/images/two.jpeg',
+                        fit: BoxFit.fill,
+                      ),
+                      SizedBox(height: _height * 0.06),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            left: _width * 0.07, right: _width * 0.07),
+                        child: Text('Invest with ease',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 26,
+                                fontWeight: FontWeight.bold)),
+                      ),
+                      SizedBox(height: _height * 0.03),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            left: _width * 0.05, right: _width * 0.05),
+                        child: Text(
+                          "Choose your trading bot and invest your favourite asset.",
+                          softWrap: true,
+                          style: TextStyle(
+                              color: Color.fromARGB(221, 1, 1, 1),
+                              fontSize: 21,
+                              fontWeight: FontWeight.w200),
+                        ),
+                      )
+                    ],
+                  ),
+                  SingleChildScrollView(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Image.asset(
@@ -141,17 +140,14 @@ class _IntroSliderState extends State<IntroSlider> {
                           ),
                         ),
                       ],
-                    )
-                  ],
-                ),
-                Positioned(
-                  top: _height * 0.43,
-                  left: _width * 0.4,
-                  right: _width * 0.4,
-                  child: buildIndicator(),
-                )
-              ],
-            ),
+                    ),
+                  )
+                ],
+              ),
+              Positioned(top: _height*0.5,bottom: _height*0.4,left: _width*0.4,right: _width*0.4,
+                child: buildIndicator(),
+              )
+            ],
           ),
           Center(
             child: InkWell(
