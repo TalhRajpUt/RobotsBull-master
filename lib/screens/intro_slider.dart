@@ -21,8 +21,8 @@ class _IntroSliderState extends State<IntroSlider> {
     double _width = MediaQuery.of(context).size.width;
     var _padding = MediaQuery.of(context).padding;
     double newHeight = _height - _padding.top;
-    return Material(
-      child: Stack(
+    return Scaffold(
+      body: Stack(
         children: [
           CarouselSlider(
             options: CarouselOptions(
@@ -139,9 +139,10 @@ class _IntroSliderState extends State<IntroSlider> {
                 ],
               )
             ],
-          ),SizedBox(height: newHeight*0.7),
+          ),
+          SizedBox(height: newHeight * 0.7),
           buildIndicator(),
-          SizedBox(height: newHeight*1),
+          SizedBox(height: newHeight * 0.2),
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
             child: OutlinedButton(
