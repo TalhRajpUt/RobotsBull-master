@@ -33,7 +33,7 @@ class _IntroSliderState extends State<IntroSlider> {
               }),
               enableInfiniteScroll: false,
               viewportFraction: 1,
-              height: _height * 1,
+              height: newHeight * 1,
               autoPlay: false,
               autoPlayCurve: Curves.fastOutSlowIn,
               enlargeCenterPage: false,
@@ -47,7 +47,7 @@ class _IntroSliderState extends State<IntroSlider> {
                     'assets/images/1.jpeg',
                     fit: BoxFit.fill,
                   ),
-                  SizedBox(height: _height * 0.06),
+                  SizedBox(height: newHeight * 0.06),
                   Padding(
                     padding: EdgeInsets.only(
                         left: _width * 0.07, right: _width * 0.07),
@@ -57,7 +57,7 @@ class _IntroSliderState extends State<IntroSlider> {
                             fontSize: 26,
                             fontWeight: FontWeight.w500)),
                   ),
-                  SizedBox(height: _height * 0.03),
+                  SizedBox(height: newHeight * 0.03),
                   Padding(
                     padding: EdgeInsets.only(
                         left: _width * 0.07, right: _width * 0.07),
@@ -81,7 +81,7 @@ class _IntroSliderState extends State<IntroSlider> {
                     'assets/images/two.jpeg',
                     fit: BoxFit.fill,
                   ),
-                  SizedBox(height: _height * 0.06),
+                  SizedBox(height: newHeight * 0.06),
                   Padding(
                     padding: EdgeInsets.only(
                         left: _width * 0.07, right: _width * 0.07),
@@ -91,7 +91,7 @@ class _IntroSliderState extends State<IntroSlider> {
                             fontSize: 26,
                             fontWeight: FontWeight.w500)),
                   ),
-                  SizedBox(height: _height * 0.03),
+                  SizedBox(height: newHeight * 0.03),
                   Padding(
                     padding: EdgeInsets.only(
                         left: _width * 0.05, right: _width * 0.05),
@@ -113,7 +113,7 @@ class _IntroSliderState extends State<IntroSlider> {
                     'assets/images/three.jpeg',
                     fit: BoxFit.fill,
                   ),
-                  SizedBox(height: _height * 0.06),
+                  SizedBox(height: newHeight * 0.06),
                   Padding(
                     padding: EdgeInsets.only(
                         left: _width * 0.07, right: _width * 0.07),
@@ -123,7 +123,7 @@ class _IntroSliderState extends State<IntroSlider> {
                             fontSize: 26,
                             fontWeight: FontWeight.w500)),
                   ),
-                  SizedBox(height: _height * 0.03),
+                  SizedBox(height: newHeight * 0.03),
                   Padding(
                     padding: EdgeInsets.only(
                         left: _width * 0.05, right: _width * 0.05),
