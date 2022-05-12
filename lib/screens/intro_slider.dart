@@ -144,7 +144,9 @@ class _IntroSliderState extends State<IntroSlider> {
                   )
                 ],
               ),
-              Positioned(top: _height*0.5,bottom: _height*0.4,left: _width*0.4,right: _width*0.4,
+              Padding(
+                padding:
+                    EdgeInsets.fromLTRB(_width * 0.45, _height * 0.425, 0, 0),
                 child: buildIndicator(),
               )
             ],
