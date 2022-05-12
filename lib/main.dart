@@ -29,9 +29,8 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
-        // done
       ),
-      home: const SplashScreen(),
+      home: const IntroSlider(),
     );
   }
 }
